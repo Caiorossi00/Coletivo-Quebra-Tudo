@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "Dangerous";
+  src: url(./assets/fonts/Mister\ Dangerous.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Serif 4", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2em;
+  padding-right: 3em;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: #4a442d;
+  font-family: "Dangerous";
+  margin-top: 8px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2c3e50;
+  margin-left: 2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #3498db;
+}
+
+.hero {
+  background: linear-gradient(120deg, #e6e2c9, #a69875);
+  color: white;
+  text-align: center;
+  padding-top: 5em;
+  padding-bottom: 3vh;
+  margin-top: 40px;
+}
+
+.hero img {
+  width: 12em;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  font-family: "Dangerous";
+  font-weight: lighter;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.features {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  color: #2c3e50;
+  font-size: 2.3rem;
+  font-family: "Dangerous";
+}
+
+.feature-card p {
+  color: #555;
+}
+
+.participate {
+  padding: 3rem 15%;
+  background: linear-gradient(120deg, #e6e2c9, #a69875);
+  text-align: center;
+  color: white;
+}
+
+.participate h2 {
+  font-family: "Dangerous";
+  font-size: 3em;
+}
+
+.participate button {
+  background-color: white;
+  color: #a69875;
+  padding: 0.6rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.participate button:hover {
+  background-color: #a6a17d;
+  color: white;
+}
+
+.events {
+  padding: 3rem 5rem;
+  background-color: #fff;
+}
+
+.events h2 {
+  font-family: "Dangerous";
+  font-size: 2.4em;
+}
+
+.event-card {
+  background: linear-gradient(120deg, #e6e2c9, #a69875);
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.event-card h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.social-media {
+  padding: 3rem 2rem;
+  background: linear-gradient(120deg, #e6e2c9, #a69875);
+  text-align: center;
+  color: white;
+}
+
+.social-media h2 {
+  font-family: "Dangerous";
+  font-size: 3.4em;
+}
+
+.social-media a {
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  width: 7em;
+}
+
+footer p {
+  font-family: "Dangerous";
+  margin: 0;
+  font-size: larger;
+  margin-bottom: 2vh;
+}
+
+footer a {
+  color: white;
+  font-family: "Dangerous";
+  text-decoration: none;
+}
