@@ -28,15 +28,19 @@ header {
 nav {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 2em;
+  padding-right: 3em;
 }
 
 .logo {
-  font-size: 1.5rem;
-  color: #2c3e50;
+  font-size: 2.5rem;
+  color: #4a442d;
+  font-family: "Dangerous";
+  margin-top: 8px;
 }
 
 .nav-links a {
@@ -51,15 +55,16 @@ nav {
 }
 
 .store-header {
-  background: #f8f9fa;
+  background: linear-gradient(120deg, #e6e2c9, #a69875);
   padding: 8rem 2rem 2rem;
   text-align: center;
   margin-bottom: 2rem;
+  color: white;
 }
 
 .store-header h1 {
-  color: #2c3e50;
-  margin-bottom: 1rem;
+  font-family: "Dangerous";
+  font-size: 3.5rem;
 }
 
 .book-grid {
@@ -69,18 +74,21 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
+  margin-bottom: 15vh;
+  margin-top: 10vh;
 }
 
 .book-card {
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .book-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .book-image {
@@ -90,25 +98,40 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+.book-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .book-info {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .book-info h3 {
   color: #2c3e50;
-  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
 }
 
-.price {
-  color: #3498db;
+.book-info p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.book-price {
+  color: #a69875;
   font-size: 1.25rem;
   margin: 1rem 0;
 }
 
 .buy-btn {
-  background: #3498db;
+  background: linear-gradient(120deg, #e6e2c9, #a69875);
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -116,18 +139,39 @@ nav {
   cursor: pointer;
   width: 100%;
   transition: background-color 0.3s ease;
+  font-size: 1rem;
 }
 
 .buy-btn:hover {
-  background: #2980b9;
+  background: #a5a5a5;
 }
 
 footer {
-  background: #2c3e50;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
   text-align: center;
-  padding: 2rem;
-  margin-top: 4rem;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2vh;
+}
+
+footer img {
+  width: 7em;
+}
+
+footer p {
+  font-family: "Dangerous";
+  margin: 0;
+  font-size: larger;
+  margin-bottom: 2vh;
+}
+
+footer a {
+  color: white;
+  font-family: "Dangerous";
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
