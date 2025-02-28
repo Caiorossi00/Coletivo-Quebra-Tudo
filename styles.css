@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Source Serif 4", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 300;
 }
 
@@ -95,6 +95,10 @@ nav {
   transition: transform 0.3s ease;
 }
 
+.feature-card p {
+  color: #999999;
+}
+
 .feature-card:hover {
   transform: translateY(-5px);
 }
@@ -150,6 +154,11 @@ nav {
   color: white;
 }
 
+.event-card h4 {
+  font-size: large;
+  font-weight: bold;
+}
+
 .social-media {
   padding: 2rem 5%;
   background: linear-gradient(120deg, #e6e2c9, #a69875);
@@ -181,14 +190,14 @@ footer img {
 }
 
 footer p {
-  font-family: "Dangerous";
+  font-family: "Poppins";
   font-size: 1rem;
   margin-bottom: 1rem;
 }
 
 footer a {
   color: white;
-  font-family: "Dangerous";
+  font-family: "Poppins";
   text-decoration: none;
 }
 
@@ -207,6 +216,11 @@ footer a {
 
   .nav-links a {
     margin: 0.5rem;
+  }
+
+  .hero {
+    margin-top: 5em;
+    padding-bottom: 3em;
   }
 
   .hero h1 {
@@ -290,5 +304,9 @@ footer a {
 
   footer {
     padding: 1rem;
+  }
+
+  footer p {
+    font-size: 0.8em;
   }
 }
