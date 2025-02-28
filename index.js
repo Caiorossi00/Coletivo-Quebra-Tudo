@@ -11,7 +11,7 @@ const books = [
     author: "Sarah Johnson",
     price: "R$24.99",
     image:
-      "https://images.unsplash.com/photo-1538035323718-63409b754ce7?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1538035323718-63409b754ce7?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Digital Revolution",
@@ -43,9 +43,24 @@ books.forEach((book) => {
     <h3>${book.title}</h3>
     <p>By ${book.author}</p>
     <div class="book-price">${book.price}</div>
-    <button class="buy-btn">Comprar</button>
+    <button class="buy-btn" data-title="${book.title}" data-price="${book.price}">Comprar</button>
   </div>
 `;
 
   bookGrid.appendChild(bookCard);
+});
+
+document.querySelectorAll(".buy-btn").forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const bookTitle = event.target.getAttribute("data-title");
+    const bookPrice = event.target.getAttribute("data-price");
+
+    const message = `Tenho interesse em comprar o livro ${bookTitle}, no valor de ${bookPrice}.`;
+    const phoneNumber = "5553984158694";
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(whatsappURL, "_blank");
+  });
 });
