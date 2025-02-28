@@ -9,6 +9,7 @@
   box-sizing: border-box;
   font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 300;
+  letter-spacing: -1px;
 }
 
 body {
@@ -104,8 +105,10 @@ nav {
 }
 
 .feature-card h3 {
-  font-family: "Dangerous";
-  font-size: 2em;
+  font-family: "Poppins";
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: -2px;
 }
 
 .participate {
@@ -116,8 +119,10 @@ nav {
 }
 
 .participate h2 {
-  font-family: "Dangerous";
-  font-size: 2.5em;
+  font-family: "Poppins";
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: -2px;
 }
 
 .participate button {
@@ -142,9 +147,11 @@ nav {
 }
 
 .events h2 {
-  font-family: "Dangerous";
+  font-family: "Poppins";
   font-size: 2em;
+  font-weight: bold;
 }
+
 .event-card {
   background: linear-gradient(120deg, #e6e2c9, #a69875);
   padding: 1.5rem;
@@ -167,8 +174,10 @@ nav {
 }
 
 .social-media h2 {
-  font-family: "Dangerous";
+  font-family: "Poppins";
   font-size: 2em;
+  font-weight: bold;
+  letter-spacing: -2px;
 }
 
 .social-media a {
@@ -192,6 +201,7 @@ footer img {
 footer p {
   font-family: "Poppins";
   font-size: 1rem;
+  font-weight: bold;
   margin-bottom: 1rem;
 }
 
@@ -199,6 +209,10 @@ footer a {
   color: white;
   font-family: "Poppins";
   text-decoration: none;
+}
+
+footer a:hover {
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
