@@ -148,8 +148,10 @@ nav {
 
 .events h2 {
   font-family: "Poppins";
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
+  color: #999999;
+  margin-bottom: 10px;
 }
 
 .event-card {
